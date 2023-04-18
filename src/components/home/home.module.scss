@@ -1,0 +1,110 @@
+.container {
+  padding: 0 4%;
+}
+
+.home{
+  font-family: 'Value Sans Pro', sans-serif;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
+}
+
+.homeLogo{
+  height: 50px;
+  width: 222px;
+  cursor: pointer;
+}
+
+.homeSearch{
+  position: relative;
+  width: 64%;
+}
+
+.homeSearch__input{
+  width: 100%;
+  border-radius: 71px;
+  border: 2px solid #8B4795CC;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+
+.homeSearch__image{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  transform: translateY(calc(-50% + 12px)) ;
+  right: 20px;
+}
+
+.homeIcon {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin: 15px;
+
+  &:hover a {
+    color: red;
+    transition: 0.2s;
+  }
+
+  &:hover path {
+    stroke: red;
+    transition: 0.2s;
+  }
+
+  &:hover circle {
+    stroke: red;
+    transition: 0.2s;
+  }
+  &:hover fill{
+    stroke: red;
+    transition: 0.2s;
+  }
+}
+.homeIcon__oll{
+  display: flex;
+}
+
+.homeIcon__heard:hover path{
+  fill: red;
+  transition: 0.2s;
+}
+
+.homeUser__text{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+  flex: none;
+}
+
+.homeFavorite__text{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+  flex: none;
+}
+
+.homeBasket__text{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+  flex: none;
+}
+
+.homeIcon p{
+  margin: 0;
+}

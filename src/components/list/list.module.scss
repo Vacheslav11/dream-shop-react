@@ -1,0 +1,27 @@
+.container {
+  padding: 0 4%;
+}
+
+.list{
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.listText{
+  text-decoration: none;
+  font-family:'Value Sans Pro', sans-serif;
+  color: #333333;
+  font-weight: 300;
+  padding-right: 25px;
+  transition:  color 0.2s linear;
+  &:hover{
+    color: #ffc401;
+  }
+}
+.menu__mobileText{
+  display: none;
+}
