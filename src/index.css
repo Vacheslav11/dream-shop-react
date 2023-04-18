@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Value Sans Pro';
+  src: url("assets/fonts/ValueSansPro-Regular.eot");
+  src: url("assets/fonts/ValueSansPro-Regular.eot")format("embedded-opentype"),
+  url("assets/fonts/ValueSansPro-Regular.woff") format("woff"),
+  url("assets/fonts/ValueSansPro-Regular.woff2") format("woff2"),
+  url("assets/fonts/ValueSansPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
