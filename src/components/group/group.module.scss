@@ -1,0 +1,367 @@
+.groupText__on{
+  margin-left: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  gap: 20px;
+}
+.groupText__forwardOll{
+  gap: 30px;
+  display: flex;
+}
+.group{
+  display: flex;
+  position: relative;
+  top: 140px;
+  width: 100%;
+  height: 868px;
+  background: linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%);
+}
+.groupText__new{
+  width: 183px;
+  height: 64px;
+  left: 11%;
+  top: 236px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+}
+.groupText__style{
+  width: 370px;
+  left: 11%;
+  top: 330px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+}
+.groupText__forward{
+}
+.groupText__back{
+  width: 58px;
+  height: 58px;
+}
+.groupCards{
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+
+}
+.groupCards__closet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(51, 51, 51, 0.27);
+  width: 354px;
+  height: 514px;
+  background: #FFFFFF;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #8B4795;
+  }
+  &:hover button{
+    opacity: 1;
+    transition: 1s;
+  }
+  & svg:hover path{
+    stroke: red;
+    transition: 0.2s;
+  }
+  &:hover svg{
+    opacity: 1;
+    transition: 1s;
+  }
+}
+
+.groupCards__room{
+  position: relative;
+  border: 1px solid rgba(51, 51, 51, 0.27);
+  width: 354px;
+  height: 514px;
+  background: #FFFFFF;
+  cursor: pointer;
+  margin: 0 16px;
+  &:hover{
+    border: 1px solid #8B4795;
+  }
+}
+
+.groupCards__sofa{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(51, 51, 51, 0.27);
+  width: 354px;
+  height: 514px;
+  background: #FFFFFF;
+  cursor: pointer;
+  align-items: center;
+  &:hover{
+    border: 1px solid #8B4795;
+  }
+  &:hover svg{
+    opacity: 1;
+  }
+  &:hover button{
+    opacity: 1;
+    transition: 1s;
+  }
+}
+
+.groupCards__closetImg{
+  width: 215px;
+  height: 260px;
+  top: 60px;
+  left: 67px;
+}
+
+.groupCards__closetName{
+  top: 340px;
+  left: 34px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.groupCards__closetText{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  width: 40px;
+  height: 20px;
+  left: 34px;
+  top: 367px;
+}
+
+.groupCards__closetHm{
+  width: 73px;
+  height: 28px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  top: 391px;
+  left: 34px;
+}
+
+.closetHm__oll{
+  display: flex;
+  gap: 20px;
+}
+.groupCards__ollName{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.groupCards__closetOld{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  top: 391px;
+  left: 123px;
+  text-decoration: line-through;
+}
+
+.groupCards__svg{
+  opacity: 1;
+  display: flex;
+}
+
+.groupCards__closetBuy{
+  background: #FFD103;
+  text-decoration: none;
+  color: #333333;
+  width: 230px;
+  height: 48px;
+  padding: 16px 32px;
+  font-weight: 700;
+  border-radius: 100px;
+  letter-spacing: 0.005em;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.groupCards__closetOll{
+  margin: 40px 0 0;
+}
+
+.groupCards__roomImg{
+  width: 352px;
+}
+
+.groupCards__roomName{
+  width: 166px;
+  height: 20px;
+  top: 367px;
+  left: 34px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.groupCards__roomHm{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  top: 391px;
+  left: 34px;
+}
+.groupCards__room:hover svg{
+  opacity: 1;
+  transition: 1s;
+}
+.groupCards__room:hover button{
+  opacity: 1;
+  transition: 1s;
+}
+
+.groupCards__roomOld{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  top: 391px;
+  left: 132px;
+  text-decoration: line-through;
+}
+
+.groupCards__sofaImg{
+  top: 109px;
+  left: 13px;
+}
+
+.groupCards__sofaName{
+  font-family: 'Value Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  top: 367px;
+  left: 34px;
+}
+
+.groupCards__sofaHm{
+  font-family: 'Value Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  top: 391px;
+  left: 34px;
+}
+
+.groupCards__sofaOld{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  top: 391px;
+  left: 134px;
+  text-decoration: line-through;
+}
+.test{
+  height: 58px;
+  width:  58px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.27);
+  background: #FFFFFF;
+}
+.test:hover {
+  border: 2px solid #8B4795;
+  transition: 0.2s;
+}
+
+.test:hover .arrow{
+  border-color: #8B4795;
+  transition: 0.2s;
+}
+
+.arrow {
+  margin: 0;
+  top: 35%;
+  left: 25%;
+  position: absolute;
+  border:  solid rgba(51, 51, 51, 0.27);
+  border-width: 0 2px 2px 0;
+  padding: 7px;
+}
+
+.left {
+  transform: rotate(135deg) translate(-50%,-50%);
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.testStop{
+  position: absolute;
+  top: 335px;
+  left: 80%;
+}
+.cardFavorites{
+  position: absolute;
+  top: 19px;
+  right: 63px;
+  &:hover path{
+    fill:  red;
+    transition: 0.2s;
+  }
+}
+
+.cardRating{
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  &:hover path{
+    stroke: red;
+  }
+}
+
+.styled:hover{
+  background-color: rgba(200, 209, 3, 1);
+  transition: 0.2s
+}
+.styled:active {
+  box-shadow: inset -5px -5px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,164 @@
+.services{
+  position: relative;
+  top: 340px;
+  padding-left: 8.35%;
+  padding-right: 8.35%;
+}
+
+.servicesText{
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.servicesBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicesBox__size{
+  position: relative;
+  width: 400px;
+  height: 302px;
+  background: #EDEBE9;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+  background-position: 1px -400px;
+  transition: background 1s ease-out;
+}
+
+.servicesBox__sizeImg{
+  margin: 40px 0 0 205px;
+}
+
+.servicesBox__sizeText{
+  position: absolute;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  left: 45px;
+  top: 220px;
+}
+
+.servicesBox__design{
+  position: relative;
+  width: 700px;
+  height: 302px;
+  background: #EDEBE9;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+  background-position: 1px -700px;
+  transition: background 1s ease-out;
+}
+
+
+.servicesBox__designImg{
+  margin: 24px 0 0 426px;
+}
+
+.servicesBox__cargo{
+  position: relative;
+  width: 400px;
+  height: 302px;
+  background: #EDEBE9;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+  background-position: 1px -400px;
+  transition: background 1s ease-out;
+}
+.servicesBox__designText{
+  position: absolute;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  left: 45px;
+  top: 220px;
+}
+.servicesBox__cargoImg{
+  margin: 35px 0 0 150px;
+}
+.servicesBox__cargoText{
+  position: absolute;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  left: 45px;
+  top: 220px;
+}
+.servicesBox__size:hover{
+  background-position: 400px;
+}
+.servicesBox__design:hover{
+  background-position: 700px;
+}
+.servicesBox__cargo:hover{
+  background-position: 400px;
+}
+.servicesBox__delivery{
+  position: relative;
+  width: 550px;
+  height: 302px;
+  background: #EDEBE9;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+  background-position: 1px -550px;
+  transition: background 1s ease-out;
+}
+
+.servicesBox__installation{
+  position: relative;
+  width: 965px;
+  height: 302px;
+  background: #EDEBE9;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+  background-position: 1px -965px;
+  transition: background 1s ease-out;
+}
+.servicesBox__dawn{
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.servicesBox__deliveryImg{
+  margin: 23px 0 0 270px;
+}
+.servicesBox__deliveryText{
+  position: absolute;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  left: 45px;
+  top: 220px;
+}
+.servicesBox__installationImg{
+  margin: 35px 0 0 700px;;
+
+}
+.servicesBox__installationText{
+  position: absolute;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  left: 45px;
+  top: 220px;
+}
+.servicesBox__delivery:hover{
+  background-position: 550px;
+}
+
+.servicesBox__installation:hover{
+  background-position: 965px;
+}

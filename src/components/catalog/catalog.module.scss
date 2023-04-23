@@ -1,0 +1,92 @@
+.catalog{
+  display: flex;
+  width: 100%;
+  padding-top: 140px;
+  justify-content: space-between;
+  & img {
+    width: 100%;
+  }
+}
+.catalogFurniture{
+  position: relative;
+  width: 33.33%;
+}
+.catalogFurniture__catalog{
+  position: absolute;
+  color: #FFFFFF;
+  left: 80px;
+  top: 300px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  font-family: 'Value Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 20px;
+  &:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: calc(7vw - 10px);
+    background-color: #FFFFFF;
+    top: 50%;
+    margin-left: 15px;
+  }
+}
+
+.catalogHm{
+  position: absolute;
+  color: #FFFFFF;
+  left: 80px;
+  top: 488px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 64px;
+}
+.catalogText{
+  position: absolute;
+  color: #FFFFFF;
+  left: 80px;
+  top: 550px;
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+}
+.catalogKitchens{
+  position: relative;
+  width: 33.33%;
+}
+.catalogHallways{
+  position: relative;
+  width: 33.33%;
+}
+.arrow {
+  margin: 0;
+  top: 35%;
+  left: 25%;
+  position: absolute;
+  border:  solid rgba(51, 51, 51, 0.27);
+  border-width: 0 2px 2px 0;
+  padding: 7px;
+}
+.right {
+  transform: rotate(-45deg);
+}
+.testStop__old{
+  position: absolute;
+  top: 335px;
+  left: 80%;
+}
+.test_old{
+  height: 58px;
+  width:  58px;
+  position: relative;
+  left: 30%;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.27);
+  background: #FFFFFF;
+}

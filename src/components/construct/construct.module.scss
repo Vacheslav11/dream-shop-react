@@ -1,0 +1,224 @@
+.construct{
+  position: relative;
+  top: 240px;
+  padding-left: 8.35%;
+  padding-bottom: 8.35%;
+  border-bottom: 1px solid #C1C1C1;
+}
+
+.constructLeft{
+  left: 153px;
+}
+
+.constructText__name{
+  font-family: 'Value Sans Pro', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.constructMenu a{
+  text-decoration: none;
+  color: #333333;
+  padding-right: 34px;
+}
+
+.constructText__sofa:hover {
+  font-weight: 700;
+}
+
+.constructText__room:hover {
+  font-weight: 700;
+}
+
+.constructText__living:hover {
+  font-weight: 700;
+}
+
+.constructText__hallway:hover {
+  font-weight: 700;
+}
+
+.constructText__children:hover {
+  font-weight: 700;
+}
+
+.constructBox{
+  display: flex;
+  position: relative;
+  top: 65px;
+}
+
+.constructBox__group{
+  position: absolute;
+  width: 175px;
+  height: 149px;
+  background: #FFFFFF;
+  top: 313px;
+  left: 93px;
+}
+
+.constructLink{
+  position: absolute;
+  top: 240px;
+  left: 280px;
+}
+
+.constructLink_none{
+  position: absolute;
+  top: 504px;
+  left: 47px;
+}
+
+.constructLink__back{
+  position: absolute;
+  top: 443px;
+  left: 973px;
+}
+
+.constructLink__left{
+  position: absolute;
+  top: 376px;
+  left: 624px;
+}
+
+.constructBox__left{
+  padding-top: 167px;
+  left: 66%;
+}
+
+.test{
+  height: 58px;
+  width:  58px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.27);
+  background: #FFFFFF;
+  &:hover {
+    border: 2px solid #8B4795;
+    transition: 0.2s;
+  }
+}
+.test:hover .arrow{
+  border-color: #8B4795;
+  transition: 0.2s;
+}
+
+.arrow {
+  margin: 0;
+  top: 35%;
+  left: 25%;
+  position: absolute;
+  border:  solid rgba(51, 51, 51, 0.27);
+  border-width: 0 2px 2px 0;
+  padding: 7px;
+}
+
+.left {
+  transform: rotate(135deg) translate(-50%,-50%);
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.testStop{
+  position: absolute;
+  top: 335px;
+  left: 80%;
+}
+
+.constructBox_border{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.testBorder__left{
+
+  top: 615px;
+  left: 80%;
+}
+
+.testBorder__right{
+
+  top: 615px;
+  left: 86%;
+}
+.testStop__old{
+  position: absolute;
+  top: 335px;
+  left: 80%;
+}
+.test_old{
+  height: 58px;
+  width:  58px;
+  position: relative;
+  left: 30%;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.27);
+  background: #FFFFFF;
+}
+
+.boxSvg__favorite{
+  position: absolute;
+  left: 127px;
+  top: 25px;
+  &:hover path {
+    fill: red;
+    transition: 0.2s;
+  }
+}
+
+.constructBox__text{
+  padding-left: 15px;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 15px;
+}
+
+.constructBox__textTwo{
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1px;
+  padding-left: 15px;
+}
+
+.constructBox__textHm{
+  position: absolute;
+  padding-left: 15px;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.constructBox__textNone{
+  position: absolute;
+  padding-top: 21px;
+  font-family: 'Value Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 15px;
+  text-decoration: line-through;
+}
+
+.boxSvg__basket{
+  position: absolute;
+  left: 127px;
+  top: 95px;
+  &:hover path{
+    stroke: red;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}
