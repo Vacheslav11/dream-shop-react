@@ -3,18 +3,16 @@ import styles from "./list.module.scss";
 
 
 const List = () => {
+    const arr = [`АКЦИИ`,`ШКАФЫ`,`СПАЛЬНЯ`,`КУХНЯ`,`ПРИХОЖАЯ`,`ГОСТИНАЯ`,`МЯГКАЯ МЕБЕЛЬ`,`ОБЕДЕННЫЕ ЗОНЫ`,`СТУЛЬЯ`,`СТОЛЫ`,`МАТРАСЫ`,`ДЕТСКАЯ`,`ТЕКСТИЛЬ ДЛЯ ДОМА`,`КОЛЛЕКЦИИ`];
+    const renderArr = () =>{
+        return arr.map((element) =>{
+            return  <a href="#" className={styles.listText}>{element}</a>
+        })
+    }
     return (
         <div>
             <div className={`${styles.list} ${styles.container}`}>
-                <a href="#" className={styles.listText}>АКЦИИ</a>
-                <a href="#" className={styles.listText}>ШКАФЫ</a>
-                <a href="#" className={styles.listText}>СПАЛЬНЯ</a>
-                <a href="#" className={styles.listText}>КУХНЯ</a>
-                <a href="#" className={styles.listText}>ПРИХОЖАЯ</a>
-                <a href="#" className={styles.listText}>ГОСТИНАЯ</a>
-                <a href="#" className={styles.listText}>МЯГКАЯ МЕБЕЛЬ</a>
-
-
+                {renderArr()}
                 <div className={styles.menu__mobileButton} id="click">
                     <span></span>
                     <div id="menu__mobile-text" className={styles.menu__mobileText}>
@@ -36,15 +34,6 @@ const List = () => {
                         </ul>
                     </div>
                 </div>
-
-
-                <a href="#" className={styles.listText}>ОБЕДЕННЫЕ ЗОНЫ</a>
-                <a href="#" className={styles.listText}>СТУЛЬЯ</a>
-                <a href="#" className={styles.listText}>СТОЛЫ</a>
-                <a href="#" className={styles.listText}>МАТРАСЫ</a>
-                <a href="#" className={styles.listText}>ДЕТСКАЯ</a>
-                <a href="#" className={styles.listText}>ТЕКСТИЛЬ ДЛЯ ДОМА</a>
-                <a href="#" className={styles.listText}>КОЛЛЕКЦИИ</a>
             </div>
         </div>
     );

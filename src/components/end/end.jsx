@@ -3,6 +3,24 @@ import styles from "./end.module.scss";
 
 
 const End = () => {
+    const arr = [`Шкафы`,`Спальня`,`Кухня`,`Прихожая`,`Гостинная`,`Спальные гарнитуры`,`Мягкая мебель`];
+    const renderArr = () => {
+        return arr.map((element)=>{
+            return <a className={styles.endText} href="#">{element}</a>
+        })
+    }
+    const arrOne = ['Обеденные зоны',`Стулья`,`Столы`,`Матрасы`,`Детская`,`Коллекция`]
+    const renderArrOne = () => {
+        return arrOne.map((element)=>{
+            return  <a className={styles.endText} href="#">{element}</a>
+        })
+    }
+    const arrTwo = [`Каталог`,`Скидки и акции`,`Как купить`,`Доставка`,`Гарантии`,`Оплата`]
+    const renderArrTwo = () => {
+        return arrTwo.map((element)=>{
+            return <a className={styles.endText} href="#">{element}</a>
+        })
+    }
     return (
         <div className={styles.end}>
             <div className={styles.endBox}>
@@ -10,33 +28,17 @@ const End = () => {
                     <div className={styles.endBox__textOne}>
                         <p>Каталог</p>
                         <div className={styles.endRedact__text}>
-                            <a className={styles.endText} href="#">Шкафы</a>
-                            <a className={styles.endText} href="#">Спальня</a>
-                            <a className={styles.endText} href="#">Кухня</a>
-                            <a className={styles.endText} href="#">Прихожая</a>
-                            <a className={styles.endText} href="#">Гостинная</a>
-                            <a className={styles.endText} href="#">Спальные гарнитуры</a>
-                            <a className={styles.endText} href="#">Мягкая мебель</a>
+                            {renderArr()}
                         </div>
                     </div>
                     <div className={styles.endRedact__textTwo}>
-                        <a className={styles.endText} href="#">Обеденные зоны</a>
-                        <a className={styles.endText} href="#"> Стулья</a>
-                        <a className={styles.endText} href="#">Столы</a>
-                        <a className={styles.endText} href="#">Матрасы</a>
-                        <a className={styles.endText} href="#">Детская</a>
-                        <a className={styles.endText} href="#">Коллекция</a>
+                        {renderArrOne()}
                     </div>
 
                     <div className={styles.endRedact__three}>
                         <p>Покупателям</p>
                         <div className={styles.endRedact__four}>
-                            <a className={styles.endText} href="#">Каталог</a>
-                            <a className={styles.endText} href="#">Скидки и акции</a>
-                            <a className={styles.endText} href="#">Как купить</a>
-                            <a className={styles.endText} href="#">Доставка</a>
-                            <a className={styles.endText} href="#">Гарантии</a>
-                            <a className={styles.endText} href="#">Оплата</a>
+                            {renderArrTwo()}
                         </div>
                     </div>
                     <div className={styles.endRedact__five}>

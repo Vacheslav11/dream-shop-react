@@ -7,17 +7,19 @@ import linkNone from "../../assets/img/link-none.png";
 import bedside from "../../assets/img/bedside.png";
 
 const Construct = () => {
+    const arr = [`Кухня`,`Спальня`,`Гостиная`,`Прихожая`,`Детская`];
+    const renderArr = () =>{
+        return arr.map((element) =>{
+            return <a href="#" className={styles.constructText__sofa}>{element}</a>
+        })
+    }
     return (
         <div className={styles.construct}>
             <div className={styles.constructLeft}>
                 <div className={styles.constructLeft}>
                     <a className={styles.constructText__name}>Идеи для вдохновения</a>
                     <div className={styles.constructMenu}>
-                        <a href="#" className={styles.constructText__sofa}>Кухня</a>
-                        <a href="#" className={styles.constructText__room}>Спальня</a>
-                        <a href="#" className={styles.constructText__living}>Гостиная</a>
-                        <a href="#" className={styles.constructText__hallway}>Прихожая</a>
-                        <a href="#" className={styles.constructText__children}>Детская</a>
+                        {renderArr()}
                     </div>
                 </div>
                 <div className={styles.constructBox}>

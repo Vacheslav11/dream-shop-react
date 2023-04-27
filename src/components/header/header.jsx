@@ -5,6 +5,12 @@ import styles from "./header.module.scss";
 import pointer from "../../assets/img/carbon_location.png";
 
 const App = () => {
+    const nav = ['О нас', 'Магазины','Оптовикам','Доставка','Контакты' ]
+    const renderNav = () => {
+        return nav.map((element) => {
+            return  <a className={styles.headerNav__item} href="#">{element}</a>
+        })
+    }
     return (
         <div className={`${styles.header} ${styles.container}`}>
                 <div className={styles.headerContainer__item}>
@@ -13,11 +19,7 @@ const App = () => {
                 </div>
                 <div className={styles.headerNav}>
                     <a className={styles.headerLine__item} href="tel:+73812504888">+7 3812 50-48-88</a>
-                    <a className={styles.headerNav__item} href="#">О нас</a>
-                    <a className={styles.headerNav__item} href="#">Магазины</a>
-                    <a className={styles.headerNav__item} href="#">Оптовикам</a>
-                    <a className={styles.headerNav__item} href="#">Доставка</a>
-                    <a className={styles.headerNav__item }href="#">Контакты</a>
+                    {renderNav()}
                 </div>
         </div>
     );
