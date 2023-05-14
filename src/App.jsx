@@ -34,8 +34,6 @@ const App = () => {
             <Desk/>
             <End/>
                 <DeskEnd/>
-
-
         </div>
     );
 };

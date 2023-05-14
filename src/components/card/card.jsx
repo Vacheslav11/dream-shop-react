@@ -52,11 +52,11 @@ const Card = () => {
                                 </g>
                             </svg>
                         </div>
-                        <div className={styles.cardText__sofa}>
+                        <div>
                             <p className={styles.cardText__name}>ДИВАН</p>
                             <p className={styles.cardText__nameText}> Авангард П—образный</p>
                             <p className={styles.cardText__price}><b>52 950 ₽</b><small> <s>68 450 ₽</s></small></p>
-                            <div className={styles.cardText__basketDown}>
+                            <div>
                                 <button className={`${styles.cardText__basket} ${styles.styled}`}
                                         type="button">
                                     Добавить в корзину
@@ -138,7 +138,7 @@ const Card = () => {
                             </button>
                         </div>
                     </div>
-                    <div className={`${styles.cardBed__oll} ${styles.cardMobile__off}`}>
+                    <div className={styles.cardBed__oll}>
                         <div className={styles.cardBed}>
                             <img src={cardBad} alt="" />
                             <svg className={styles.cardFavorites}

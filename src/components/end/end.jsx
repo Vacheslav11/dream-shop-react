@@ -21,6 +21,13 @@ const End = () => {
             return <a className={styles.endText} href="#">{element}</a>
         })
     }
+    const arrThree = [`О нас`,`Магазины`,`Оптовикам`,`Контакты`];
+    const renderArrThree = () =>{
+        return arrThree.map((element)=>{
+            return <a className={styles.endText} href="#">{element}</a>
+        })
+
+    }
     return (
         <div className={styles.end}>
             <div className={styles.endBox}>
@@ -44,10 +51,7 @@ const End = () => {
                     <div className={styles.endRedact__five}>
                         <p>Всё о Мечте</p>
                         <div className={styles.endFive__redact}>
-                            <a className={styles.endText} href="#">О нас</a>
-                            <a className={styles.endText} href="#">Магазины</a>
-                            <a className={styles.endText} href="#">Оптовикам</a>
-                            <a className={styles.endText} href="#">Контакты</a>
+                            {renderArrThree()}
                         </div>
                     </div>
                     <div className={styles.endRedact__six}>
