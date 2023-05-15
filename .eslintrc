@@ -1,18 +1,20 @@
 {
   "env": {
     "browser": true,
-    "es2021": true, 
+    "es2021": true,
     "node": true
   },
-  "plugins": ["react", "import", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "import", "prettier"],
   "extends": [
+    "airbnb-typescript",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,

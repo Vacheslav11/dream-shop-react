@@ -5,3 +5,4 @@ dist
 **/*.d.ts
 **/*.config.js
 src/setupTests.ts
+**/*.test.js
