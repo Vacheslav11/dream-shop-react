@@ -4,6 +4,8 @@ import table from "../../assets/img/table.png";
 import chair from "../../assets/img/chair.png";
 import cardBad from "../../assets/img/card-bed.png";
 import styles from "./card.module.scss";
+import styles1 from "./mobileCard.module.scss"
+
 
 const Card = () => {
   return (
@@ -22,7 +24,7 @@ const Card = () => {
           </div>
         </div>
         <div className={styles.cardHolder}>
-          <div className={styles.cardSofa__oll}>
+          <div className={`${styles.cardSofa__oll} ${styles.cardMobile__on}`}>
             <div className={styles.cardSofa}>
               <a className={styles.cardSofa__text}>-15%</a>
               <a className={styles.cardSofa__textSell}>хит продаж</a>
@@ -185,7 +187,7 @@ const Card = () => {
               </button>
             </div>
           </div>
-          <div className={styles.cardBed__oll}>
+          <div className={`${styles.cardBed__oll} ${styles.cardMobile__off}`}>
             <div className={styles.cardBed}>
               <img src={cardBad} alt="" />
               <svg

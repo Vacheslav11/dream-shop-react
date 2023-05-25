@@ -55,3 +55,58 @@
 .boxEnd__svg{
   padding-top: 14px;
 }
+@media (max-width: 1024px) {
+  .boxEnd{
+    position: relative;
+    top:740px;
+    padding-left: 0;
+  }
+  .boxEnd__textItem{
+    position: relative;
+    top: 15px;
+  }
+  .boxEnd__payment{
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .boxEnd{
+    top:765px
+  }
+}
+@media only screen and (max-width: 768px) {
+  .boxEnd__itemText{
+    width: 25%;
+  }
+  .boxEnd__item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .boxEnd{
+    height: 100%;
+    top: 800px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .boxEnd{
+    top: 940px;
+  }
+  .endBox{
+    height: 1380px;
+  }
+  .boxEnd__itemText{
+    font-size: 10px;
+  }
+  .boxEnd__textItem{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .boxEnd {
+    top: 970px;
+  }
+}

@@ -105,3 +105,37 @@
 .homeIcon p{
   margin: 0;
 }
+
+@media (max-width: 1024px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+  }
+  .homeIcon__oll{
+    display: flex;
+  }
+  .homeIcon{
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .homeSearch__input{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .homeSearch__input{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .homeIcon{
+    width: 20%;
+  }
+  .homeLogo{
+    width: 100%;
+  }
+}

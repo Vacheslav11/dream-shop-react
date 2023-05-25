@@ -221,3 +221,128 @@
     cursor: pointer;
   }
 }
+@media (max-width: 1024px) {
+  .constructBox{
+    display: block;
+  }
+  .constructBox__left{
+    width: 45%;
+    position: relative;
+    bottom: 170px;
+    left: 30%;
+  }
+  .constructBox__img{
+    width: 100%;
+  }
+  .constructLink__back{
+    width: 45px;
+    top:400px;
+    left: 88%;
+  }
+  .constructLink__left{
+    width: 45px;
+    top: 350px;
+  }
+  .constructLink{
+    width: 45px;
+  }
+  .constructLink_none{
+    width: 45px;
+    top: 430px;
+  }
+  .constructBox__leftImg{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .constructBox__img{
+    width: 100%;
+  }
+  .constructBox__left{
+    left: 25%;
+  }
+  .constructLink__back{
+    top: 400px;
+  }
+  .constructLink_none{
+    left: 20px;
+    top: 430px;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .constructLink__back{
+    top: 350px;
+  }
+  .constructLink__left{
+    top: 290px;
+    left: 65%;
+  }
+  .constructLink_none{
+    top: 380px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .constructBox__left{
+    left: 15%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .constructBox__group,
+  .constructLink_none,
+  .constructLink,
+  .constructLink__left,
+  .constructLink__back {
+    display: none;
+  }
+  .constructBox__group {
+    width: 175px;
+    height: 75px;
+    top: 280px;
+  }
+  .constructBox__textHm,
+  .constructBox__textNone,
+  .boxSvg__basket {
+    display: none;
+  }
+  .constructLink__left {
+    top: 238px;
+  }
+  .constructLink__back {
+    top: 291px;
+  }
+  .constructLink_none {
+    top: 292px;
+  }
+  .constructLink {
+    left: 250px;
+    top: 175px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .construct{
+    border-bottom: none;
+  }
+  .constructBox__left{
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+    left: 13%;
+  }
+}
+@media only screen and (max-width: 420px){
+.constructMenu{
+  display: flex;
+  flex-direction: column;
+}
+  .constructText__name{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .constructBox__leftImg{
+    display: none;
+  }
+  .constructText__name{
+    font-size: 28px;
+  }
+}

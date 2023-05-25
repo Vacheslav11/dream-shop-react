@@ -90,3 +90,66 @@
   border: 2px solid rgba(51, 51, 51, 0.27);
   background: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .catalogHm{
+    display: none;
+  }
+  .test_old{
+    bottom: 150px;
+    height: 48px;
+    width: 48px;
+    left: -15px;
+  }
+  .catalogText{
+    display: none;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .catalogFurniture__catalog{
+    left: 34px;
+    top: 190px;
+  }
+  .test_old{
+    height: 48px;
+    width: 48px;
+  }
+  .testStop__old{
+    top:  100px;
+    left: 60%;
+    bottom: 200px;
+  }
+  .arrow{
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .testBorder__right,
+  .testBorder__left{
+    top:380px;
+  }
+  .catalog{
+    padding-top: 240px;
+  }
+  .test_old{
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .test_old{
+    left: 0;
+    bottom: 30px;
+  }
+  .catalogFurniture__catalog{
+    left: 4px;
+    top: 120px;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .test_old{
+    left: 0;
+    bottom: 60px;
+  }
+}

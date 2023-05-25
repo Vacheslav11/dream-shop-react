@@ -163,3 +163,34 @@
 .coverImage > div {
   margin-left: 16px;
 }
+@media (max-width: 1024px) {
+  .coverImage__off{
+    display: none;
+  }
+  .coverImage{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .coverImage__sofa,
+  .coverImage__wing,
+  .coverImage__hallway,
+  .coverImage__bed,
+  .coverImage__armchair,
+  .coverImage__hallway-image,
+  .coverImage__kitchen,
+  .coverImage__bedroom,
+  .coverImage__hallwayImage{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 420px){
+  .coverText__discount{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .coverText__discount{
+    font-size: 40px;
+  }
+}

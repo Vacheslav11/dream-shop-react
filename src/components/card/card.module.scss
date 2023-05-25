@@ -278,3 +278,53 @@
 .cardMobile__switch{
 
 }
+@media only screen and (max-width: 1024px) {
+  .cardMobile__off{
+    display: none;
+  }
+  .cardMobile__on{
+    display: none;
+  }
+
+  .card{
+    justify-content: space-evenly;
+  }
+  .cardText__nameText{
+    margin: 0;
+  }
+  .svg_back{
+    left: 4%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .cardHolder{
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 420px){
+  .svg_back{
+    width: 20px;
+  }
+.test{
+  right: 14px;
+}
+}
+@media only screen and (max-width: 640px){
+  .cardMobile__on{
+    display: none;
+  }
+  .cardTableAll{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px){
+  .cardSofa__ollOn{
+    display: none;
+  }
+  .cardChairOllOn{
+    display: none;
+  }
+  .test{
+    right: 30px;
+  }
+}

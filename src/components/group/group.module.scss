@@ -365,3 +365,56 @@
 .styled:active {
   box-shadow: inset -5px -5px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 1024px) {
+  .group{
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+  }
+  .groupCards{
+    width: auto;
+  }
+  .groupCards__sofa,
+  .groupCards__room{
+    display: none;
+  }
+  .groupText__back{
+    left: 18%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .groupText__new,
+  .groupText__style{
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 640px){
+  .groupCards__closetImg{
+    left: 50px;
+  }
+  .groupCards__closet{
+    width: 300px;
+  }
+  .groupText__style{
+    width: 300px;
+    top: 310px;
+  }
+}
+@media only screen and (max-width: 420px){
+  .groupCards__closet{
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .groupText__forwardOll{
+    margin-top: 60px;
+  }
+}

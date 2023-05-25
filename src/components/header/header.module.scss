@@ -55,4 +55,27 @@
   align-items: flex-end;
 }
 
+@media only screen and (max-width: 720px) {
+  .headerNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+  }
+  .headerLine__item{
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .headerNav__item{
+    margin-right: 3px;
+  }
+}
+@media only screen and (max-width: 420px){
+  .headerContainer__item{
+    align-items: center;
+  }
+}
 

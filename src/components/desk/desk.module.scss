@@ -17,6 +17,15 @@
   height: 431px;
 
 }
+.deskPng_one{
+  display: flex;
+  justify-content: space-between;
+}
+.deskPng_two{
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
 .twoPng{
   width: 23.4%;
 }
@@ -113,7 +122,6 @@
   white-space: nowrap;
 }
 .deskBox__inst{
-
   top: 499px;
   color: #333333;
   left:1070px;
@@ -131,4 +139,96 @@
   text-decoration: none;
   border-radius: 100px;
   border: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .deskBox{
+    flex-direction: row;
+    display: block;
+    height: 1240px;
+  }
+  .deskImg__one{
+    display: none;
+  }
+  .onePng{
+    margin: 0;
+    width: 100%;
+    display: table;
+  }
+  .deskImg__two{
+    width: 49.5%;
+  }
+  .deskImg__three{
+    width: 49.5%;
+  }
+  .deskImg__five{
+    display: none;
+  }
+  .deskImg__four{
+    display: none;
+  }
+  .twoPng{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+    margin-top: 20px;
+  }
+  .deskName__box{
+    margin-top: 40px;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .deskImg__five{
+    right: 348px;
+  }
+  .deskBox__name{
+    top: 780px;
+  }
+  .deskBox__info{
+    top: 825px;
+    left: 23%;
+  }
+  .deskBox__vk {
+    top: 780px;
+  }
+  .deskBox__odn {
+    top: 840px;
+  }
+  .deskBox__inst {
+    top: 900px;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .deskImg__two,
+  .deskImg__three{
+    width: 100%;
+  }
+  .deskPng_one,
+  .twoPng{
+    display: block;
+  }
+  .deskBox{
+    height: 3200px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .deskBox{
+    height: 2753px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .deskBox{
+    height: 2500px;
+  }
+}
+@media only screen and (max-width: 420px){
+  .desk,
+  .services{
+    padding: 15%;
+  }
+  .deskBox{
+    height: 1408px;
+  }
 }

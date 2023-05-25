@@ -13,12 +13,12 @@ const Desk = () => {
     <div className={styles.desk}>
       <div className={styles.deskBox}>
         <div className={styles.onePng}>
-          <div>
+          <div className={styles.deskPng_one}>
             <img src={desk} alt="" className={styles.deskImg__one} />
             <img src={desk2} alt="" className={styles.deskImg__two} />
             <img src={desk3} alt="" className={styles.deskImg__three} />
           </div>
-          <div>
+          <div className={styles.deskPng_two}>
             <img src={desk5} alt="" className={styles.deskImg__four} />
             <img src={desk6} alt="" className={styles.deskImg__five} />
           </div>

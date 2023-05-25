@@ -162,3 +162,96 @@
 .servicesBox__installation:hover{
   background-position: 965px;
 }
+
+@media (max-width: 1024px) {
+  .servicesBox,
+  .servicesBox__dawn{
+    display: block;
+    padding: 0;
+  }
+  .servicesBox__size,
+  .servicesBox__design,
+  .servicesBox__cargo,
+  .servicesBox__delivery,
+  .servicesBox__delivery,
+  .servicesBox__installation{
+    margin: 0 0 10px;
+    width: 100%;
+    padding: 0;
+  }
+  .servicesBox__installationImg,
+  .servicesBox__deliveryImg,
+  .servicesBox__cargoImg,
+  .servicesBox__designImg,
+  .servicesBox__sizeImg{
+    margin: 3% 0 0 55%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .servicesBox__designImg{
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .servicesBox__designImg{
+    width:40%;
+
+    left: 60%;
+  }
+  .servicesBox__cargoImg{
+    width: 40%;
+  }
+  .servicesBox__deliveryImg{
+    width: 40%;
+  }
+  .servicesBox__installationImg{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .servicesBox__sizeImg{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 640px){
+  .servicesBox__sizeText{
+    left: 20px;
+    top: 130px;
+  }
+  .servicesBox__sizeImg,
+  .servicesBox__designImg,
+  .servicesBox__cargoImg,
+  .servicesBox__deliveryImg,
+  .servicesBox__installationImg{
+    width: 30%;
+  }
+  .servicesBox__size,
+  .servicesBox__design,
+  .servicesBox__cargo,
+  .servicesBox__delivery,
+  .servicesBox__installation{
+    height: 220px;
+  }
+  .servicesBox__designText{
+    top: 134px;
+    left: 20px;
+  }
+  .servicesBox__cargoText{
+    top: 150px;
+    left: 20px;
+  }
+  .servicesBox__deliveryText{
+    left: 20px;
+    top: 120px;
+  }
+  .servicesBox__installationText{
+    left: 20px;
+    top: 129px;
+  }
+}
+@media only screen and (max-width: 420px){
+  .desk,
+  .services{
+    padding: 15%;
+  }
+}
