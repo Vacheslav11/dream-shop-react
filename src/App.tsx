@@ -4,8 +4,8 @@ import Home from "./components/home/home";
 import List from "./components/list/list";
 import Cover from "./components/cover/cover";
 import Title from "./components/title/title";
-import Card from "./components/card/card";
-import Catalog from "./components/catalog/catalog";
+import Cards from "./components/card/cards";
+import Catalogs from "./components/catalog/catalogs";
 import TitleText from "./components/title/titleText";
 import Group from "./components/group/group";
 import Construct from "./components/construct/construct";
@@ -22,10 +22,10 @@ const App = () => {
       <List />
       <Cover />
       <Title />
-      <Card />
-      <Catalog />
+      <Cards />
+      <Catalogs />
       <TitleText />
-      <Card />
+      <Cards />
       <Group />
       <Construct />
       <Services />

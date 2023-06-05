@@ -30,7 +30,7 @@
 }
 
 .servicesBox__sizeImg{
-  margin: 40px 0 0 205px;
+  padding: 10% 0 0 51%;
 }
 
 .servicesBox__sizeText{
@@ -57,7 +57,7 @@
 
 
 .servicesBox__designImg{
-  margin: 24px 0 0 426px;
+  padding: 3.5% 0 0 60%;
 }
 
 .servicesBox__cargo{
@@ -65,6 +65,7 @@
   width: 400px;
   height: 302px;
   background: #EDEBE9;
+  overflow: hidden;
   cursor: pointer;
   background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
   background-position: 1px -400px;
@@ -81,7 +82,7 @@
   top: 220px;
 }
 .servicesBox__cargoImg{
-  margin: 35px 0 0 150px;
+  padding: 8.7% 0 0 37.5%;
 }
 .servicesBox__cargoText{
   position: absolute;
@@ -129,7 +130,7 @@
   justify-content: space-between;
 }
 .servicesBox__deliveryImg{
-  margin: 23px 0 0 270px;
+  padding: 2% 0 0 50%;
 }
 .servicesBox__deliveryText{
   position: absolute;
@@ -142,7 +143,7 @@
   top: 220px;
 }
 .servicesBox__installationImg{
-  margin: 35px 0 0 700px;;
+  padding: 3% 0 0 60%;
 
 }
 .servicesBox__installationText{
@@ -184,7 +185,9 @@
   .servicesBox__cargoImg,
   .servicesBox__designImg,
   .servicesBox__sizeImg{
-    margin: 3% 0 0 55%;
+    padding: 0;
+    margin: 2% 0 0 70%;
+    width: 30%;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -193,38 +196,16 @@
   }
 }
 @media only screen and (max-width: 900px) {
-  .servicesBox__designImg{
-    width:40%;
-
-    left: 60%;
-  }
-  .servicesBox__cargoImg{
-    width: 40%;
-  }
-  .servicesBox__deliveryImg{
-    width: 40%;
-  }
-  .servicesBox__installationImg{
-    width: 40%;
-  }
 }
 @media only screen and (max-width: 720px) {
-  .servicesBox__sizeImg{
-    width: 40%;
-  }
+
 }
 @media only screen and (max-width: 640px){
   .servicesBox__sizeText{
     left: 20px;
     top: 130px;
   }
-  .servicesBox__sizeImg,
-  .servicesBox__designImg,
-  .servicesBox__cargoImg,
-  .servicesBox__deliveryImg,
-  .servicesBox__installationImg{
-    width: 30%;
-  }
+
   .servicesBox__size,
   .servicesBox__design,
   .servicesBox__cargo,
@@ -250,6 +231,13 @@
   }
 }
 @media only screen and (max-width: 420px){
+  .servicesBox__sizeImg,
+  .servicesBox__designImg,
+  .servicesBox__cargoImg,
+  .servicesBox__deliveryImg,
+  .servicesBox__installationImg{
+    margin: 20% 0 0 70%;
+  }
   .desk,
   .services{
     padding: 15%;

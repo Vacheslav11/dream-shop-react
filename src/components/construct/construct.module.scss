@@ -3,6 +3,7 @@
   top: 240px;
   padding-left: 8.35%;
   padding-bottom: 8.35%;
+  padding-right: 8.35%;;
   border-bottom: 1px solid #C1C1C1;
 }
 
@@ -25,21 +26,17 @@
 }
 
 .constructText__sofa:hover {
-  font-weight: 700;
+  color: #8B4795;
 }
-
 .constructText__room:hover {
   font-weight: 700;
 }
-
 .constructText__living:hover {
   font-weight: 700;
 }
-
 .constructText__hallway:hover {
   font-weight: 700;
 }
-
 .constructText__children:hover {
   font-weight: 700;
 }
@@ -48,44 +45,53 @@
   display: flex;
   position: relative;
   top: 65px;
+
+}
+.constructBox__img{
+  width: 100%;
+}
+.constructBox_oll{
+  display: flex;
 }
 
 .constructBox__group{
   position: absolute;
-  width: 175px;
-  height: 149px;
+  width: 180px;
+  height: 160px;
   background: #FFFFFF;
-  top: 313px;
-  left: 93px;
+  top: 45%;
+  left: 10%;
 }
 
 .constructLink{
   position: absolute;
-  top: 240px;
-  left: 280px;
+  top: 40%;
+  left: 30%;
 }
 
 .constructLink_none{
   position: absolute;
-  top: 504px;
-  left: 47px;
+  top: 65%;
+  left: 3%;
 }
 
 .constructLink__back{
   position: absolute;
-  top: 443px;
-  left: 973px;
+  top: 64%;
+  left: 87%;
 }
 
 .constructLink__left{
   position: absolute;
-  top: 376px;
-  left: 624px;
+  top: 55%;
+  left: 67%;
 }
 
 .constructBox__left{
-  padding-top: 167px;
-  left: 66%;
+  position: relative;
+  width: 30%;
+  padding-top: 152px;
+  padding-left: 3%;
 }
 
 .test{
@@ -133,8 +139,39 @@
 
 .constructBox_border{
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  padding-top: 10%;
+  gap: 20px;
+  padding-left: 65%;
+}
+.constructBox_line{
+  position: absolute;
+  color: #8b4795;
+  left: 20%;
+  bottom: 17%;
+  transform-origin: top left;
+  font-family: "Value Sans Pro", sans-serif;
+  &:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: calc(7vw - -40px);
+    background-color: rgb(201 95 216 / 80%);
+  }
+}
+.constructBox_line_all{
+  position: absolute;
+  color: #8b4795;
+  left: 20%;
+  bottom: 17%;
+  transform-origin: top left;
+  font-family: "Value Sans Pro", sans-serif;
+  &:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: calc(7vw - 10px);
+    background-color: blueviolet;
+  }
 }
 
 .testBorder__left{
@@ -199,6 +236,9 @@
   font-weight: 500;
   font-size: 20px;
 }
+.constructBox__leftImg{
+  width: 100%;
+}
 
 .constructBox__textNone{
   position: absolute;
@@ -222,37 +262,30 @@
   }
 }
 @media (max-width: 1024px) {
+  .constructBox_oll{
+    display: block;
+  }
+  .constructBox_line_all,
+  .constructBox_line{
+    display: none;
+  }
   .constructBox{
     display: block;
   }
   .constructBox__left{
-    width: 45%;
-    position: relative;
-    bottom: 170px;
-    left: 30%;
+    display: none;
   }
   .constructBox__img{
     width: 100%;
   }
-  .constructLink__back{
-    width: 45px;
-    top:400px;
-    left: 88%;
-  }
-  .constructLink__left{
-    width: 45px;
-    top: 350px;
-  }
-  .constructLink{
-    width: 45px;
-  }
+  .constructLink__back,
+  .constructLink__left,
+  .constructLink,
   .constructLink_none{
     width: 45px;
-    top: 430px;
   }
-  .constructBox__leftImg{
-    width: 100%;
-  }
+
+
 }
 @media only screen and (max-width: 960px) {
   .constructBox__img{
@@ -261,25 +294,16 @@
   .constructBox__left{
     left: 25%;
   }
-  .constructLink__back{
-    top: 400px;
-  }
-  .constructLink_none{
-    left: 20px;
-    top: 430px;
-  }
+
+
 }
 @media only screen and (max-width: 864px) {
-  .constructLink__back{
-    top: 350px;
-  }
+
   .constructLink__left{
     top: 290px;
     left: 65%;
   }
-  .constructLink_none{
-    top: 380px;
-  }
+
 }
 @media only screen and (max-width: 810px) {
   .constructBox__left{
@@ -294,11 +318,7 @@
   .constructLink__back {
     display: none;
   }
-  .constructBox__group {
-    width: 175px;
-    height: 75px;
-    top: 280px;
-  }
+
   .constructBox__textHm,
   .constructBox__textNone,
   .boxSvg__basket {
@@ -307,12 +327,8 @@
   .constructLink__left {
     top: 238px;
   }
-  .constructLink__back {
-    top: 291px;
-  }
-  .constructLink_none {
-    top: 292px;
-  }
+
+
   .constructLink {
     left: 250px;
     top: 175px;
@@ -327,6 +343,9 @@
     padding: 0;
     bottom: 20px;
     left: 13%;
+  }
+  .constructMenu a{
+    padding-right: 20px;
   }
 }
 @media only screen and (max-width: 420px){

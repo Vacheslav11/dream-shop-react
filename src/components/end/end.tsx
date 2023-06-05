@@ -93,7 +93,10 @@ const End = () => {
               />
             </div>
             <div className={styles.endInput__wrapper}>
-              <button className={styles.endButton} type="button">
+              <button
+                className={`${styles.endButton}  ${styles.styled}`}
+                type="button"
+              >
                 Подпишись
               </button>
               <h6 className={styles.endButton__text}>
@@ -122,6 +125,7 @@ const End = () => {
               <div className={styles.tgIcon__oll}>
                 <p className={styles.tgIcon}>
                   <svg
+                    className={styles.tgIcon_center}
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="20"
@@ -138,6 +142,7 @@ const End = () => {
               <div className={styles.vkIcon__oll}>
                 <p className={styles.vkIcon}>
                   <svg
+                    className={styles.vkIcon_center}
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
                     height="14"
@@ -156,6 +161,7 @@ const End = () => {
               <div className={styles.classIcon__oll}>
                 <p className={styles.classIcon}>
                   <svg
+                    className={styles.classIcon_center}
                     xmlns="http://www.w3.org/2000/svg"
                     width="17"
                     height="25"

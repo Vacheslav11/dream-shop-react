@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styles from "./list.module.scss";
 
 const List = () => {
@@ -21,26 +21,36 @@ const List = () => {
   const renderArr = () => {
     return arr.map((element) => {
       return (
-        <a key={element} href="#" className={`${styles.listText} ${styles.listText__on}`}>
+        <a
+          key={element}
+          href="#"
+          className={`${styles.listText} ${styles.listText__on}`}
+        >
           {element}
         </a>
       );
     });
   };
-  const [isOpen, setIsOpen]=useState(false);
-  console.log(isOpen)
-
-
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
       <div className={`${styles.list} ${styles.container}`}>
         {renderArr()}
-        <div className={`${styles.menu__mobile_button} ${isOpen ? styles.active: ''}`} onClick={()=>{
-          setIsOpen(!isOpen)
-        }}>
+        <div
+          className={`${styles.menu__mobile_button} ${
+            isOpen ? styles.active : ""
+          }`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
           <span />
-          <div  className={`${styles.menu__mobileText} ${isOpen ? styles.show: ''}`}>
+          <div
+            className={`${styles.menu__mobileText} ${
+              isOpen ? styles.show : ""
+            }`}
+          >
             <ul>
               <li>АКЦИИ</li>
               <li>ШКАФЫ</li>

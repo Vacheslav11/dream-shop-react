@@ -1,15 +1,12 @@
 import React from "react";
-import styles from "./card.module.scss";
+import styles from "./group.module.scss";
 
-const Card = (props) => {
-  const { icon, category, name, price, prevPrice } = props;
+const Groups = (props) => {
+  const { icon, category, name, price, prevPrice, margin } = props;
 
   return (
-    <div className={styles.cardSofa__oll}>
-      <div className={styles.cardSofa}>
-        <a className={styles.cardSofa__text}>-15%</a>
-        <a className={styles.cardSofa__textSell}>хит продаж</a>
-        <img src={icon} alt="" />
+    <div className={styles.groupCards__closet}>
+      <div className={styles.groupCards__svg}>
         <svg
           className={styles.cardFavorites}
           xmlns="http://www.w3.org/2000/svg"
@@ -36,27 +33,28 @@ const Card = (props) => {
           </g>
         </svg>
       </div>
-      <div>
-        <p className={styles.cardText__name}>{category}</p>
-        <p className={styles.cardText__nameText}>{name}</p>
-        <p className={styles.cardText__price}>
-          <b>{price}</b>
-          <small>
-            {" "}
-            <s>{prevPrice}</s>
-          </small>
-        </p>
-        <div>
-          <button
-            className={`${styles.cardText__basket} ${styles.styled}`}
-            type="button"
-          >
-            Добавить в корзину
-          </button>
+      <img
+        style={{ margin }}
+        src={icon}
+        alt=""
+        className={styles.groupCards__closetImg}
+      />
+      <div className={styles.groupCards__text}>
+        <a className={styles.groupCards__closetName}>{category}</a>
+        <a className={styles.groupCards__closetText}>{name}</a>
+        <div className={styles.closetHm__oll}>
+          <a className={styles.groupCards__closetHm}>{price}</a>
+          <a className={styles.groupCards__closetOld}>{prevPrice}</a>
         </div>
       </div>
+      <button
+        className={`${styles.groupCards__closetBuy} ${styles.styled}`}
+        type="button"
+      >
+        Добавить в корзину
+      </button>
     </div>
   );
 };
 
-export default Card;
+export default Groups;

@@ -9,7 +9,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 728px;
   background: #EDEBE9;
 }
 .onePng{
@@ -139,6 +138,14 @@
   text-decoration: none;
   border-radius: 100px;
   border: 0;
+}
+.styled:hover{
+  background-color: rgba(200, 209, 3, 1);
+  transition: 0.2s
+}
+
+.styled:active {
+  box-shadow: inset -5px -5px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (max-width: 1024px) {
   .deskBox{

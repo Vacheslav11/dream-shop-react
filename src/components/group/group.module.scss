@@ -47,23 +47,31 @@
   height: 58px;
 }
 .groupCards{
-  flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-content: space-around;
-  justify-content: space-between;
   display: flex;
   margin: auto;
+  padding-left: 7%;
+  gap: 1%;
+  justify-content: flex-start;
 
+}
+.groupCards__text{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  gap: 10%;
 }
 .groupCards__closet {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-content: center;
+
   flex-wrap: wrap;
-  border: 1px solid rgba(51, 51, 51, 0.27);
-  width: 354px;
+  border: 1px solid #ffffff;
+  width: 30%;
   height: 514px;
   background: #FFFFFF;
   cursor: pointer;
@@ -123,10 +131,8 @@
 }
 
 .groupCards__closetImg{
-  width: 215px;
-  height: 260px;
-  top: 60px;
-  left: 67px;
+
+  max-width: 100%;
 }
 
 .groupCards__closetName{
@@ -145,14 +151,11 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  width: 40px;
-  height: 20px;
-  left: 34px;
-  top: 367px;
+
 }
 
 .groupCards__closetHm{
-  width: 73px;
+  width: 90px;
   height: 28px;
   font-family: 'Value Sans Pro', sans-serif;;
   font-style: normal;
@@ -357,7 +360,6 @@
     stroke: red;
   }
 }
-
 .styled:hover{
   background-color: rgba(200, 209, 3, 1);
   transition: 0.2s
@@ -374,9 +376,15 @@
   }
   .groupCards{
     width: auto;
+    padding-left: 0;
   }
-  .groupCards__sofa,
-  .groupCards__room{
+  .groupCards__closet{
+    width: 300px;
+  }
+  .groupCards__closet:nth-child(2){
+    display: none;
+  }
+  .groupCards__closet:nth-child(3){
     display: none;
   }
   .groupText__back{

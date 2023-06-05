@@ -52,114 +52,16 @@
   position: relative;
   width: 200px;
   height: 126px;
-  background: rgba(201, 201, 201, 0.21);
-
 }
 .coverImage__sofaImage{
   width: 100%;
   height: 126px;
-  background-image: url("../../assets/img/sofa-image.png"),url("../../assets/img/background.png");
   background-position: 75% 65%;
   background-repeat: no-repeat, no-repeat;
 }
 .coverImage__sofaBac{
   transform: rotate(1deg);
 }
-.coverImage__wing{
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
-
-}
-.coverImage__wingImage{
-  width: 100%;
-  height: 126px;
-  background-image: url("../../assets/img/wing.png"),url("../../assets/img/bac-wing.png");
-  background-position: 75% 50%;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.coverImage__hallway{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
-
-}
-.coverImage__hallwayBac{
-  width: 100%;
-  height: 126px;
-  background-image:url("../../assets/img/hallway.png"),url("../../assets/img/hallway-bac.png");
-  background-position: 75% 50%;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.coverImage__bed{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #FFFEFF 0%, #D7FFFE 100%);
-}
-.coverImage__bedBac{
-  width: 100%;
-  height: 126px;
-  background-image:url("../../assets/img/bed.png"),url("../../assets/img/bed-bac.png");
-  background-position: 75% 75%;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.coverImage__armchair{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
-}
-.coverImage__armchairBac{
-  width: 100%;
-  height: 126px;
-  background-image:url("../../assets/img/armchair.png"),url("../../assets/img/armchair-bac.png");
-  background-position: 75% 65%;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.coverImage__hallwayImage{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%);
-}
-.coverBac__hallwayImage{
-  width: 100%;
-  height: 126px;
-  background-image:url("../../assets/img/hallway-image.png"),url("../../assets/img/hallway-background.png");
-  background-position: 75% 65%;
-  background-repeat: no-repeat, no-repeat;
-}
-.coverImage__kitchen{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
-}
-.coverImage__kitchenBac{
-  height: 126px;
-  background-image:url("../../assets/img/kitchen.png"),url("../../assets/img/kitchen-bac.png");
-  background-position: 75% 65%;
-  background-repeat: no-repeat, no-repeat;
-}
-.coverImage__bedroom{
-  position: relative;
-  width: 200px;
-  height: 126px;
-  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
-}
-.coverImage__bedroomBac{
-  height: 126px;
-  background-image:url("../../assets/img/bedroom.png"),url("../../assets/img/bedroom-bac.png");
-  background-position: 75% 65%;
-  background-repeat: no-repeat, no-repeat;
-}
-
 .coverImage > div {
   margin-left: 16px;
 }
@@ -172,15 +74,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .coverImage__sofa,
-  .coverImage__wing,
-  .coverImage__hallway,
-  .coverImage__bed,
-  .coverImage__armchair,
-  .coverImage__hallway-image,
-  .coverImage__kitchen,
-  .coverImage__bedroom,
-  .coverImage__hallwayImage{
+  .coverImage__sofa{
     width: 70%;
   }
 }
