@@ -15,7 +15,7 @@
 
 .servicesBox{
   display: flex;
-  justify-content: space-between;
+  gap: 1.2%;
 }
 
 .servicesBox__size{
@@ -24,6 +24,7 @@
   height: 302px;
   background: #EDEBE9;
   cursor: pointer;
+  overflow: hidden;
   background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
   background-position: 1px -400px;
   transition: background 1s ease-out;
@@ -48,6 +49,7 @@
   position: relative;
   width: 700px;
   height: 302px;
+  overflow: hidden;
   background: #EDEBE9;
   cursor: pointer;
   background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
@@ -107,6 +109,7 @@
   position: relative;
   width: 550px;
   height: 302px;
+  overflow: hidden;
   background: #EDEBE9;
   cursor: pointer;
   background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
@@ -118,6 +121,7 @@
   position: relative;
   width: 965px;
   height: 302px;
+  overflow: hidden;
   background: #EDEBE9;
   cursor: pointer;
   background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
@@ -127,7 +131,7 @@
 .servicesBox__dawn{
   padding-top: 17px;
   display: flex;
-  justify-content: space-between;
+  gap: 1.2%;
 }
 .servicesBox__deliveryImg{
   padding: 2% 0 0 50%;

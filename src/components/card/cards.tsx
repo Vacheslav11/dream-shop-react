@@ -3,6 +3,7 @@ import bigSofa1 from "../../assets/img/bigSofa.png";
 import table from "../../assets/img/table.png";
 import chair from "../../assets/img/chair.png";
 import cardBed1 from "../../assets/img/cardBed.png";
+import Arrow from "../arrow";
 import styles from "./card.module.scss";
 import Card from "./card";
 
@@ -48,16 +49,10 @@ const Cards = () => {
     <div className={styles.cards}>
       <div className={styles.card}>
         <div className={styles.svg_back}>
-          <div className={styles.test}>
-            <p className={styles.testBorder} />
-            <p className={`${styles.arrow} ${styles.left}`} />
-          </div>
+          <Arrow position="left" />
         </div>
         <div className={styles.svg_forward}>
-          <div className={styles.test}>
-            <p className={styles.testBorder} />
-            <p className={`${styles.arrow} ${styles.right}`} />
-          </div>
+          <Arrow position="right" />
         </div>
         <div className={styles.cardHolder}>{renderItems()}</div>
       </div>

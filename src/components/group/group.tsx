@@ -2,6 +2,7 @@ import React from "react";
 import bedroomBig1 from "../../assets/img/bedroomBig.png";
 import sofaBig from "../../assets/img/sofaBig1.png";
 import closet1 from "../../assets/img/closet21.png";
+import Arrow from "../arrow";
 import styles from "./group.module.scss";
 import Groups from "./groups";
 
@@ -45,16 +46,10 @@ const Group = () => {
         </a>
         <div className={styles.groupText__forwardOll}>
           <div className={styles.groupText__forward}>
-            <div className={styles.test}>
-              <p className={styles.testBorder} />
-              <p className={`${styles.arrow} ${styles.left}`} />
-            </div>
+            <Arrow position="left" />
           </div>
           <div className={styles.groupText__back}>
-            <div className={styles.test}>
-              <p className={styles.testBorder} />
-              <p className={`${styles.arrow} ${styles.right}`} />
-            </div>
+            <Arrow position="right" />
           </div>
         </div>
       </div>
