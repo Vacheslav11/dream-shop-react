@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../construct/construct.module.scss";
 
 interface Props {
   className: string;

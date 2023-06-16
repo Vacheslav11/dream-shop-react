@@ -4,10 +4,10 @@
 
 .list{
   height: 60px;
-
+  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 
 }
 
@@ -88,13 +88,13 @@
     top: calc(100% + 15px);
     display: none;
   }
-  .menu__mobileText ul {
+  .menu__mobileText{
     margin: 2px;
     padding: 30px;
     border: 1px solid rgba(201, 201, 201, 0.21);
     background: #ffd1ff;
   }
-  .menu__mobileText ul li {
+  .menu__mobileText ul li{
     margin-top: 10px;
     list-style: none;
     &:hover{
@@ -102,7 +102,11 @@
     }
   }
   .menu__mobileText.show {
-    display: block;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    gap: 10px;
+
   }
 }
 @media only screen and (max-width: 720px) {

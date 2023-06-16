@@ -5,15 +5,36 @@ import Item from "../items/item";
 import Basket from "../items/basket";
 import User from "../items/user";
 import styles from "./home.module.scss";
+import HomeIcon from "./homeIcon";
+
 
 const Home = () => {
+    const items =[
+        {
+            icon: <User className={styles.homeIcon} />,
+            name: "Войти"
+        },
+        {
+            icon: <Item className={styles.boxSvg__favorite} />,
+            name: "Избранное"
+        },
+        {
+            icon: <Basket className={styles.boxSvg__basket} />,
+            name: "Корзина"
+        }
+    ];
+
+    const renderItem = () => {
+        return items.map((item, index) => {
+            return <HomeIcon key={index} {...item} />;
+        });
+    };
+
   return (
     <div className={`${styles.home} ${styles.container}`}>
-      <p>
         <a href="#">
           <img src={logo} alt="logo" className={styles.homeLogo} />
         </a>
-      </p>
       <div className={styles.homeSearch}>
         <input
           placeholder="Что вы ищете?"
@@ -21,30 +42,7 @@ const Home = () => {
         />
         <img src={search} alt="search" className={styles.homeSearch__image} />
       </div>
-      <div className={styles.homeIcon__oll}>
-        <div className={styles.homeIcon}>
-          <User className={styles.homeIcon} />
-          <a href="#" className={styles.homeUser__text}>
-            Войти
-          </a>
-        </div>
-        <div className={styles.homeIcon}>
-          <a href="#">
-            <Item className={styles.boxSvg__favorite} />
-          </a>
-          <a href="#" className={styles.homeFavorite__text}>
-            Избранное
-          </a>
-        </div>
-        <div className={styles.homeIcon}>
-          <a href="#">
-            <Basket className={styles.boxSvg__basket} />
-          </a>
-          <a href="#" className={styles.homeBasket__text}>
-            Корзина
-          </a>
-        </div>
-      </div>
+        <div className={styles.homeIcon}>{renderItem()}</div>
     </div>
   );
 };

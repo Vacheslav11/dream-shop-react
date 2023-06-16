@@ -24,19 +24,21 @@ const List = () => {
         <a
           key={element}
           href="#"
-          className={`${styles.listText} ${styles.listText__on}`}
+          className={styles.listText}
         >
           {element}
         </a>
       );
     });
   };
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
       <div className={`${styles.list} ${styles.container}`}>
+        <div className={`${styles.listText} ${styles.listText__on}`}>
         {renderArr()}
+        </div>
         <div
           className={`${styles.menu__mobile_button} ${
             isOpen ? styles.active : ""
@@ -51,26 +53,10 @@ const List = () => {
               isOpen ? styles.show : ""
             }`}
           >
-            <ul>
-              <li>АКЦИИ</li>
-              <li>ШКАФЫ</li>
-              <li>СПАЛЬНЯ</li>
-              <li>КУХНЯ</li>
-              <li>ПРИХОЖАЯ</li>
-              <li>ГОСТИНАЯ</li>
-              <li>МЯГКАЯ МЕБЕЛЬ</li>
-              <li>ОБЕДЕННЫЕ ЗОНЫ</li>
-              <li>СТУЛЬЯ</li>
-              <li>СТОЛЫ</li>
-              <li>МАТРАСЫ</li>
-              <li>ДЕТСКАЯ</li>
-              <li>ТЕКСТИЛЬ ДЛЯ ДОМА</li>
-              <li>КОЛЛЕКЦИИ</li>
-            </ul>
+              {renderArr()}
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

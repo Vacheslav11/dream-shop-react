@@ -5,13 +5,12 @@
   height: 120px;
   padding-left: 155px;
   padding-top: 30px;
-
 }
+
 .boxEnd__item{
   display: flex;
-
-
 }
+
 .boxEnd__itemText{
   width: 18%;
   font-family: 'Value Sans Pro',sans-serif;
@@ -19,8 +18,8 @@
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0;
-
 }
+
 .boxEnd__textItem{
   width: 23%;
   font-family: 'Value Sans Pro',sans-serif;
@@ -43,7 +42,7 @@
 }
 
 .boxEnd__card{
-  width: 36%;
+
   display: flex;
   line-height: 50px;
   padding-top: 14px;
@@ -52,9 +51,9 @@
     margin-left: 20px;
   }
 }
-
 .boxEnd__svg{
   padding-top: 14px;
+  margin-left: 20%;
 }
 @media (max-width: 1024px) {
   .boxEnd{

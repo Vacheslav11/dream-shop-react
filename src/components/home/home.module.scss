@@ -34,9 +34,10 @@
     outline: none;
   }
 }
-
-
-
+.iconCenter{
+  display: flex;
+  justify-content: space-around;
+}
 .homeSearch__image{
   height: 24px;
   width: 24px;
@@ -48,30 +49,15 @@
 
 .homeIcon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 35px;
   text-decoration: none;
-  margin: 15px;
-
-  &:hover a {
-    color: red;
-    transition: 0.2s;
-  }
-
-  &:hover path{
-    stroke: red;
-    transition: 0.2s;
-  }
-
-  &:hover circle {
-    stroke: red;
-    transition: 0.2s;
-  }
-
+  margin: 5px;
 }
+
 .homeIcon__oll{
   display: flex;
 }
@@ -86,22 +72,19 @@
   color: #333333;
   font-weight: 700;
   flex: none;
+  &:hover{
+    color: red;
+    transition: 0.2s;
+  }
+  &:hover path{
+    stroke: red;
+    transition: 0.2s;
+  }
+  &:hover circle {
+    stroke: red;
+    transition: 0.2s;
+  }
 }
-
-.homeFavorite__text{
-  text-decoration: none;
-  color: #333333;
-  font-weight: 700;
-  flex: none;
-}
-
-.homeBasket__text{
-  text-decoration: none;
-  color: #333333;
-  font-weight: 700;
-  flex: none;
-}
-
 .homeIcon p{
   margin: 0;
 }
@@ -114,6 +97,7 @@
   }
   .homeIcon__oll{
     display: flex;
+    justify-content: space-around;
   }
   .homeIcon{
     margin: 20px;
