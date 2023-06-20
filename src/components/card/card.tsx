@@ -11,9 +11,8 @@ const Card = (props) => {
       <div className={styles.cardSofa}>
         <a className={styles.cardSofa__text}>-15%</a>
         <a className={styles.cardSofa__textSell}>хит продаж</a>
-        <img src={icon} alt="" />
+        <img src={icon} alt="icon" />
         <Favorite className={styles.cardFavorites} />
-
         <Rating className={styles.cardRating} />
       </div>
       <div>

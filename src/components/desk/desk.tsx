@@ -14,13 +14,13 @@ const Desk = () => {
       <div className={styles.deskBox}>
         <div className={styles.onePng}>
           <div className={styles.deskPng_one}>
-            <img src={desk} alt="" className={styles.deskImg__one} />
-            <img src={desk2} alt="" className={styles.deskImg__two} />
-            <img src={desk3} alt="" className={styles.deskImg__three} />
+            <img src={desk} alt="desk" className={styles.deskImg__one} />
+            <img src={desk2} alt="desk" className={styles.deskImg__two} />
+            <img src={desk3} alt="desk" className={styles.deskImg__three} />
           </div>
           <div className={styles.deskPng_two}>
-            <img src={desk5} alt="" className={styles.deskImg__four} />
-            <img src={desk6} alt="" className={styles.deskImg__five} />
+            <img src={desk5} alt="desk" className={styles.deskImg__four} />
+            <img src={desk6} alt="desk" className={styles.deskImg__five} />
           </div>
         </div>
         <div className={styles.deskName__box}>
@@ -52,8 +52,8 @@ const Desk = () => {
           </div>
         </div>
         <div className={styles.twoPng}>
-          <img src={desk4} alt="" className={styles.deskImg__six} />
-          <img src={desk7} alt="" className={styles.deskImg__seven} />
+          <img src={desk4} alt="desk" className={styles.deskImg__six} />
+          <img src={desk7} alt="desk" className={styles.deskImg__seven} />
         </div>
       </div>
     </div>

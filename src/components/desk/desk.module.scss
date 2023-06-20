@@ -186,6 +186,11 @@
     display: flex;
   }
 }
+@media only screen and (max-width: 960px){
+.desk{
+  top: 20px;
+}
+}
 @media only screen and (max-width: 864px) {
   .deskImg__five{
     right: 348px;

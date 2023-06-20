@@ -9,9 +9,9 @@ const Link: React.FC<Props> = (props) => {
   const { className, src } = props;
 
   return (
-      <a href="#">
-        <img src={src} alt="" className={className} />
-      </a>
+    <a href="#">
+      <img src={src} alt="icon" className={className} />
+    </a>
   );
 };
 

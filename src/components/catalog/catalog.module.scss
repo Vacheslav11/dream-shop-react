@@ -102,14 +102,16 @@
   }
 }
 @media (max-width: 1024px) {
+  .catalog{
+    padding-top: 55px;
+  }
   .test_old{
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    width: 40px;
+    top: 100px;
   }
 }
 @media only screen and (max-width: 810px) {
-
-
   .arrow{
     padding: 5px;
   }
@@ -120,9 +122,7 @@
   .testBorder__left{
     top:380px;
   }
-  .catalog{
-    padding-top: 240px;
-  }
+
 }
 @media only screen and (max-width: 640px){
   .catalog{

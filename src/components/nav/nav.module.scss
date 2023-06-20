@@ -2,7 +2,7 @@
   padding: 0 4%;
 }
 
-.list{
+.nav{
   height: 60px;
   justify-content: center;
   display: flex;
@@ -11,7 +11,7 @@
 
 }
 
-.listText{
+.navText{
   text-decoration: none;
   font-family:'Value Sans Pro', sans-serif;
   color: #333333;
@@ -26,13 +26,13 @@
   display: none;
 }
 @media only screen and (max-width: 1024px) {
-  .list{
+  .nav{
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-  .listText__on{
+  .navText__on{
     display: none;
   }
   .menu__mobile {
@@ -92,7 +92,7 @@
     margin: 2px;
     padding: 30px;
     border: 1px solid rgba(201, 201, 201, 0.21);
-    background: #ffd1ff;
+    background: rgba(139, 71, 149, 0.8);
   }
   .menu__mobileText ul li{
     margin-top: 10px;
@@ -110,17 +110,17 @@
   }
 }
 @media only screen and (max-width: 720px) {
-  .listText{
+  .navText{
     padding-right: 1px;
   }
 }
 @media only screen and (max-width: 640px){
-  .listText{
+  .navText{
     padding-right: 13px;
   }
 }
 @media only screen and (max-width: 320px){
-  .listText__off{
+  .navText__off{
     display: none;
   }
 }

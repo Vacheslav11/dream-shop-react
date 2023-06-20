@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../card/card.module.scss";
 
 interface Props {
   className: string;

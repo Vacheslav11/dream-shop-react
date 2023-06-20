@@ -33,3 +33,14 @@
 .right {
   transform: rotate(-45deg);
 }
+@media only screen and (max-width: 420px){
+  .arrow{
+    top: 31%;
+    left: 18%;
+    padding: 5px;
+  }
+  .test{
+    height: 30px;
+    width: 30px;
+  }
+}

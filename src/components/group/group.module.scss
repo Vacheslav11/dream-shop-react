@@ -48,7 +48,7 @@
 }
 .groupCards{
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
   display: flex;
@@ -142,6 +142,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  min-height: 14px;
 }
 
 .groupCards__closetText{
@@ -195,14 +196,11 @@
 
 .groupCards__closetBuy{
   background: #FFD103;
-  text-decoration: none;
   color: #333333;
   width: 230px;
   height: 48px;
-  padding: 16px 32px;
   font-weight: 700;
   border-radius: 100px;
-  letter-spacing: 0.005em;
   font-size: 1rem;
   border: 0;
   cursor: pointer;
@@ -371,11 +369,12 @@
   .group{
     margin-left: auto;
     margin-right: auto;
-    top: 200px;
+    top: 40px;
   }
   .groupCards{
     width: auto;
     padding-left: 0;
+
   }
   .groupCards__closet{
     width: 300px;

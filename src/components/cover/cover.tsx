@@ -71,21 +71,21 @@ const Cover = () => {
     });
   };
   return (
-      <div>
-        <div className={styles.cover}>
-          <div className={styles.coverBac}>
-            <div className={styles.coverText}>
-              <p>Хочется сэкономить?</p>
-            </div>
-            <div className={styles.coverText__discount}>
-              <p>
-                Скидка 5% <br /> при самовывозе
-              </p>
-            </div>
+    <div>
+      <div className={styles.cover}>
+        <div className={styles.coverBac}>
+          <div className={styles.coverText}>
+            <p>Хочется сэкономить?</p>
+          </div>
+          <div className={styles.coverText__discount}>
+            <p>
+              Скидка 5% <br /> при самовывозе
+            </p>
           </div>
         </div>
-        <div className={styles.coverImage}>{renderItems()}</div>
       </div>
+      <div className={styles.coverImage}>{renderItems()}</div>
+    </div>
   );
 };
 

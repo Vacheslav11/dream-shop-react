@@ -23,7 +23,7 @@
 }
 
 .homeSearch__input{
-  width: 100%;
+  width: 95%;
   border-radius: 71px;
   border: 2px solid #8B4795CC;
   padding: 10px;
@@ -44,7 +44,7 @@
   position: absolute;
   top: calc(50% - 12px);
   transform: translateY(calc(-50% + 12px)) ;
-  right: 20px;
+  right: 40px;
 }
 
 .homeIcon {
@@ -90,6 +90,9 @@
 }
 
 @media (max-width: 1024px) {
+  .homeSearch__image{
+    right: 0;
+  }
   .home{
     display: flex;
     flex-direction: column;

@@ -1,25 +1,49 @@
 import React from "react";
-import pointer from "../../assets/img/carbon_location.png";
-import styles from "./header.module.scss";
-import HeaderNav from "./headerNav";
+import logo from "../../assets/img/logo.png";
+import search from "../../assets/img/search.png";
+import Item from "../items/item";
+import Basket from "../items/basket";
+import User from "../items/user";
+import styles from "./home.module.scss";
+import HomeIcon from "./homeIcon";
 
-const App = () => {
+const Header = () => {
+  const items = [
+    {
+      icon: <User id="svg" />,
+      name: "Войти",
+    },
+    {
+      icon: <Item className={styles.boxSvg__favorite} />,
+      name: "Избранное",
+    },
+    {
+      icon: <Basket className={styles.boxSvg__basket} />,
+      name: "Корзина",
+    },
+  ];
+
+  const renderItem = () => {
+    return items.map((item, index) => {
+      return <HomeIcon key={index} {...item} />;
+    });
+  };
+
   return (
-    <div className={`${styles.header} ${styles.container}`}>
-      <div className={styles.headerContainer__item}>
-        <img src={pointer} alt="" />
-        <a className={styles.headerImage} href="">
-          Омск
-        </a>
+    <div className={`${styles.home} ${styles.container}`}>
+      <a href="#">
+        <img src={logo} alt="logo" className={styles.homeLogo} />
+      </a>
+      <div className={styles.homeSearch}>
+        <input
+          placeholder="Что вы ищете?"
+          className={styles.homeSearch__input}
+        />
+        <img src={search} alt="search" className={styles.homeSearch__image} />
       </div>
-      <div className={styles.headerNav}>
-        <a className={styles.headerLine__item} href="tel:+73812504888">
-          +7 3812 50-48-88
-        </a>
-        {HeaderNav()}
-      </div>
+      <div className={styles.homeIcon}>{renderItem()}</div>
     </div>
   );
 };
 
-export default App;
+export default Header;

@@ -6,7 +6,7 @@ const Catalog = (props) => {
 
   return (
     <div className={styles.catalogFurniture}>
-      <img src={icon} alt="" />
+      <img src={icon} alt="icon" />
       {allName && <a className={styles.catalogFurniture__catalog}>{allName}</a>}
       <a className={styles.catalogHm}>{count}</a>
       <a className={styles.catalogText}>{name}</a>

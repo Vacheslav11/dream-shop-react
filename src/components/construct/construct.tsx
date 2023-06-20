@@ -36,7 +36,7 @@ const Construct = () => {
             <div className={styles.constructBox_one}>
               <img
                 src={constructRoom1}
-                alt=""
+                alt="constructRoom"
                 className={styles.constructBox__img}
               />
               <div className={styles.constructBox__group}>
@@ -57,7 +57,7 @@ const Construct = () => {
             <img
               className={styles.constructBox__leftImg}
               src={bedside}
-              alt=""
+              alt="bedside"
             />
             <div className={styles.constructBox_border}>
               <div className={styles.testBorder__left}>

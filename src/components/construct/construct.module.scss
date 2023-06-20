@@ -248,13 +248,13 @@
 }
 
 .boxSvg__basket{
+  cursor: pointer;
   position: absolute;
   left: 127px;
   top: 95px;
   &:hover path{
     stroke: red;
     transition: 0.2s;
-    cursor: pointer;
   }
 }
 @media (max-width: 1024px) {
@@ -284,11 +284,17 @@
 
 }
 @media only screen and (max-width: 960px) {
+  .construct{
+    top: 40px;
+  }
   .constructBox__img{
     width: 100%;
   }
   .constructBox__left{
     left: 25%;
+  }
+  .construct{
+    border-bottom: none;
   }
 
 

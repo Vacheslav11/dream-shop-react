@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./end.module.scss";
 import Telegram from "../items/telegram";
-import Messenger1 from "../items/messenger1";
-import Messenger2 from "../items/messenger2";
+import Vk from "../items/vk";
+import Odnoclassniki from "../items/odnoclassniki";
+import styles from "./categories.module.scss";
 
-const End = () => {
+const Categories = () => {
   const arr = [
     `Шкафы`,
     `Спальня`,
@@ -17,7 +17,7 @@ const End = () => {
   const renderArr = () => {
     return arr.map((element) => {
       return (
-        <a key={element} className={styles.endText} href="#">
+        <a key={element} className={styles.categoriesText} href="#">
           {element}
         </a>
       );
@@ -34,7 +34,7 @@ const End = () => {
   const renderArrOne = () => {
     return arrOne.map((element) => {
       return (
-        <a key={element} className={styles.endText} href="#">
+        <a key={element} className={styles.categoriesText} href="#">
           {element}
         </a>
       );
@@ -51,7 +51,7 @@ const End = () => {
   const renderArrTwo = () => {
     return arrTwo.map((element) => {
       return (
-        <a key={element} className={styles.endText} href="#">
+        <a key={element} className={styles.categoriesText} href="#">
           {element}
         </a>
       );
@@ -61,55 +61,55 @@ const End = () => {
   const renderArrThree = () => {
     return arrThree.map((element) => {
       return (
-        <a key={element} className={styles.endText} href="#">
+        <a key={element} className={styles.categoriesText} href="#">
           {element}
         </a>
       );
     });
   };
   return (
-    <div className={styles.end}>
-      <div className={styles.endBox}>
-        <div className={styles.endBox__text}>
-          <div className={styles.endBox__textOne}>
+    <div className={styles.categories}>
+      <div className={styles.categoriesBox}>
+        <div className={styles.categoriesBox__text}>
+          <div className={styles.categoriesBox__textOne}>
             <p>Каталог</p>
-            <div className={styles.endRedact__text}>{renderArr()}</div>
+            <div className={styles.categoriesRedact__text}>{renderArr()}</div>
           </div>
-          <div className={styles.endRedact__textTwo}>{renderArrOne()}</div>
+          <div className={styles.categoriesRedact__textTwo}>{renderArrOne()}</div>
 
-          <div className={styles.endRedact__three}>
+          <div className={styles.categoriesRedact__three}>
             <p>Покупателям</p>
-            <div className={styles.endRedact__four}>{renderArrTwo()}</div>
+            <div className={styles.categoriesRedact__four}>{renderArrTwo()}</div>
           </div>
-          <div className={styles.endRedact__five}>
+          <div className={styles.categoriesRedact__five}>
             <p>Всё о Мечте</p>
-            <div className={styles.endFive__redact}>{renderArrThree()}</div>
+            <div className={styles.categoriesFive__redact}>{renderArrThree()}</div>
           </div>
-          <div className={styles.endRedact__six}>
-            <p className={styles.endRedact__textSix}>
+          <div className={styles.categoriesRedact__six}>
+            <p className={styles.categoriesRedact__textSix}>
               Подпишитесь на лучшие акции и скидки!
             </p>
-            <div className={styles.endInput__redact}>
+            <div className={styles.categoriesInput__redact}>
               <input
                 placeholder="Введите свой e-mail"
-                className={styles.endInput}
+                className={styles.categoriesInput}
               />
             </div>
-            <div className={styles.endInput__wrapper}>
+            <div className={styles.categoriesInput__wrapper}>
               <button
-                className={`${styles.endButton}  ${styles.styled}`}
+                className={`${styles.categoriesButton}  ${styles.styled}`}
                 type="button"
               >
                 Подпишись
               </button>
-              <h6 className={styles.endButton__text}>
+              <h6 className={styles.categoriesButton__text}>
                 Нажимая на кнопку, Вы
                 <br /> подтверждаете, что согласны
                 <br />с политикой конфидециальности
               </h6>
             </div>
           </div>
-          <div className={styles.endRedact__seven}>
+          <div className={styles.categoriesRedact__seven}>
             <a className={styles.sevenNumber} href="tel:+73812504888">
               +7 3812 50-48-88
             </a>
@@ -124,7 +124,7 @@ const End = () => {
               <br />
               вс— выходной
             </p>
-            <div className={styles.endApplications}>
+            <div className={styles.categoriesApplications}>
               <div className={styles.tgIcon__oll}>
                 <p className={styles.tgIcon}>
                   <Telegram className={styles.tgIcon_center} />
@@ -132,12 +132,12 @@ const End = () => {
               </div>
               <div className={styles.vkIcon__oll}>
                 <p className={styles.vkIcon}>
-                   <Messenger1 className={styles.vkIcon_center} />
+                  <Vk className={styles.vkIcon_center} />
                 </p>
               </div>
               <div className={styles.classIcon__oll}>
                 <p className={styles.classIcon}>
-                   <Messenger2 className={styles.classIcon_center} />
+                  <Odnoclassniki className={styles.classIcon_center} />
                 </p>
               </div>
             </div>
@@ -148,4 +148,4 @@ const End = () => {
   );
 };
 
-export default End;
+export default Categories;

@@ -1,39 +1,63 @@
 import React from "react";
-import Favorite from "../items/favorite";
-import Rating from "../items/rating";
+import bedroomBig1 from "../../assets/img/bedroomBig.png";
+import sofaBig from "../../assets/img/sofaBig1.png";
+import closet1 from "../../assets/img/closet21.png";
+import Arrow from "../arrow";
 import styles from "./group.module.scss";
+import Group1 from "./group";
 
-const Groups = (props) => {
-  const { icon, category, name, price, prevPrice, margin } = props;
-
+const Group = () => {
+  const items = [
+    {
+      icon: closet1,
+      category: "ШКАФ ТРЕХДВЕРНЫЙ",
+      name: "Ким",
+      price: "19 370 ₽",
+      prevPrice: "23 140 ₽",
+      margin: "0 15%",
+    },
+    {
+      icon: bedroomBig1,
+      category: "",
+      name: "Констанция NEW",
+      price: "34 800 ₽",
+      prevPrice: "42 450 ₽",
+      margin: "0",
+    },
+    {
+      icon: sofaBig,
+      category: "",
+      name: "Финка 20 с оттоманкой",
+      price: "58 000 ₽",
+      prevPrice: "62 000 ₽",
+      margin: "0 10%",
+    },
+  ];
+  const renderItems = () => {
+    return items.map((item, index) => {
+      return <Group1 key={index} {...item} />;
+    });
+  };
   return (
-    <div className={styles.groupCards__closet}>
-      <div className={styles.groupCards__svg}>
-        <Favorite className={styles.cardFavorites} />
-        <Rating className={styles.cardRating} />
-      </div>
-      <img
-        style={{ margin }}
-        src={icon}
-        alt=""
-        className={styles.groupCards__closetImg}
-      />
-      <div className={styles.groupCards__text}>
-        <a className={styles.groupCards__closetName}>{category}</a>
-        <a className={styles.groupCards__closetText}>{name}</a>
-        <div className={styles.closetHm__oll}>
-          <a className={styles.groupCards__closetHm}>{price}</a>
-          <a className={styles.groupCards__closetOld}>{prevPrice}</a>
+    <div className={styles.group}>
+      <div className={styles.groupText__on}>
+        <a className={styles.groupText__new}>Новинки</a>
+        <br />
+        <a className={styles.groupText__style}>
+          Стильные и актуальные <br /> новинки каждую неделю
+        </a>
+        <div className={styles.groupText__forwardOll}>
+          <div className={styles.groupText__forward}>
+            <Arrow position="left" />
+          </div>
+          <div className={styles.groupText__back}>
+            <Arrow position="right" />
+          </div>
         </div>
       </div>
-      <button
-        className={`${styles.groupCards__closetBuy} ${styles.styled}`}
-        type="button"
-      >
-        Добавить в корзину
-      </button>
+      <div className={styles.groupCards}>{renderItems()}</div>
     </div>
   );
 };
 
-export default Groups;
+export default Group;
